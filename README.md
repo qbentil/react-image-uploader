@@ -57,7 +57,8 @@ SOFTWARE.
 
 ## Contributors
 
-- [Bentil Shadrack](https://github.com/qbentil
+- [Bentil Shadrack](https://github.com/qbentil)
+
 
 
 ## Changelog
