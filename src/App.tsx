@@ -1,24 +1,17 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import ImageBox from "./components/image-box";
+import Uploader from "./components/uploader";
 
-function App() {
+const App = () => {
+  const [image, setImage] = React.useState(null);
+  const [imageURL, setImageURL] = React.useState('');
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={'w-72 h-72'}>
+      {image ? (
+        <ImageBox setImage={setImage} imageURL={imageURL} />
+      ) : (
+        <Uploader setImageURL={setImageURL} setImage={setImage} />
+      )}
     </div>
   );
 }
