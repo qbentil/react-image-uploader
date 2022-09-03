@@ -1,34 +1,32 @@
-# React-Image-Uploader
+# React-Image-Preview
 
 ## Description
 An open source React and Tailwind package for image preview before upload.
 
 ## Installation
 
-```npm install react-image-uploader --save```
+```npm install react-image-preview --save```
 
 ## Usage
 
 ```jsx 
 import React from 'react';
-import ReactImageUploader from 'react-image-uploader';
+import ReactImagePreview from 'react-image-preview';
 
 const App = () => {
   return (
-    <ReactImageUploader
-      withIcon={true}
-      buttonText='Choose images'
-      onChange={(file) => console.log(file)}
-      imgExtension={['.jpg', '.png']}
-      maxFileSize={5242880}
-      withPreview={true}
-      singleImage={true}
-      label='Max file size: 5mb, accepted: jpg, png'
-    />
+    <div className="App">
+      <ReactImagePreview 
+        uploadText="Upload Image"
+        uploadIcon={<MdCloudUpload />}
+        imagePreviewHeight="200px"
+        imagePreviewWidth=  "200px"
+        imagePreviewBorderRadius="10px"
+      />
+    </div>
   );
-}
+};
 
-export default App;
 
 ```
 
