@@ -29,11 +29,11 @@ const Uploader = ({setImage, setImageURL}: {setImage: (e:any)=> void, setImageUR
         className="w-full h-full flex flex-col justify-center items-center rounded-lg cursor-pointer border-2 border-dashed p-10"
       >
         <div className="flex flex-col justify-center items-center pt-5 pb-6 gap-2">
-          <MdCloudUpload className="text-gray-500 text-3xl " />
-          <p className="mb-2 text-sm text-gray-500 dark:text-gray-400">
+          <MdCloudUpload className="text-gray-900 dark:text-white text-3xl " />
+          <p className="mb-2 text-sm text-gray-900 dark:text-white">
             <span className="font-semibold">Click here to upload</span>
           </p>
-          <p className="text-xs text-gray-500 dark:text-gray-400">
+          <p className="text-xs text-gray-900 dark:text-white">
             PNG OR JPG (MAX. 400x400px)
           </p>
         </div>
