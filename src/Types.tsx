@@ -21,6 +21,7 @@ export type UploaderProps = {
 
 export type ImageBoxProps = {
     setImage: React.Dispatch<React.SetStateAction<any>>,
+    setImageURL: React.Dispatch<React.SetStateAction<any>>,
     imageURL: string,
     imageBoxWidth?: string,
     imageBoxHeight?: string,
