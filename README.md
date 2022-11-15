@@ -1,22 +1,22 @@
-# React-Image-Preview
+# React-Image-Uploader
 
-## Description
+## :dart: About
 An open source React and Tailwind package for image preview before upload.
 
 ## Installation
 
-```npm install react-image-preview --save```
+```npm install react-image-upload --save```
 
 ## Usage
 
 ```jsx 
 import React from 'react';
-import ReactImagePreview from 'react-image-preview';
+import ReactImageUpload from 'react-image-upload';
 
 const App = () => {
   return (
     <div className="App">
-      <ReactImagePreview 
+      <ReactImageUpload 
         uploadText="Upload Image"
         uploadIcon={<MdCloudUpload />}
         imagePreviewHeight="200px"
@@ -53,10 +53,29 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-## Contributors
+## :rocket: Technologies
 
-- [Bentil Shadrack](https://github.com/qbentil)
+The following tools were used in this project:
 
+- [React](https://reactjs.org/)
+- [Tailwind](https://tailwindcss.com/)
+- [Typescript](https://www.typescriptlang.org/)
+- [React-Icons](https://react-icons.github.io/react-icons/)
+
+## :white_check_mark: Requirements
+
+Before starting :checkered_flag:, you need to have [React](https://reactjs.org/) & [Tailwind](https://tailwindcss.com/) installed.
+
+## :memo: Contributors
+
+These wonderful people have contributed to this project:
+
+<!-- readme: contributors -start -->
+<!-- readme: contributors -end -->
+
+## Project Maintainers
+<!-- readme: collaborators -start -->
+<!-- readme: collaborators -end -->
 
 
 ## Changelog
