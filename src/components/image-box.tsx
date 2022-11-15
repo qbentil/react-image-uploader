@@ -5,22 +5,35 @@ const ImageBox = ({
   setImage,
   imageURL,
   setImageURL,
-  imageBoxWidth = "w-full",
-  imageBoxHeight = "h-full",
-  imageBoxBorderRadius = "rounded-lg",
-  imageBoxBorder = "border-2",
-  imageBoxBorderColor = "border-gray-900",
-  imageBoxBorderWidth = "border-2",
-  imageBoxBorderStyle = "border-dashed",
-  imageBoxBoxShadow = "shadow-lg",
+  imageBoxWidth,
+  imageBoxHeight,
+  borderRadius,
+  border,
+  borderColor,
+  borderStyle,
+  boxShadow,
 }: ImageBoxProps) => {
   const Delete = () => {
     setImage(null);
     setImageURL("");
   };
   return (
-    <div className="w-full h-full flex flex-col justify-center items-center rounded-lg cursor-pointer border-2 border-dashed p-2 relative">
-      <img src={imageURL} className="w-full h-full object-cover" alt="bentil" />
+    <div
+      className={`flex flex-col justify-center items-center  cursor-pointer  p-2 relative
+      ${border}
+      ${borderColor || "border-gray-900"}
+      ${borderStyle || "border-dashed"}
+      ${boxShadow || "shadow-lg"}
+      ${imageBoxWidth || "w-full"}
+      ${imageBoxHeight || "h-full"}
+      ${borderRadius || "rounded-lg"}
+    `}
+    >
+      <img
+        src={imageURL}
+        className="w-full h-full object-cover"
+        alt="imageuploaderimage"
+      />
       <div
         onClick={Delete}
         className="w-10 h-10 flex items-center justify-center bg-red-500 hover:bg-red-600 rounded-full text-white absolute bottom-5 right-5"

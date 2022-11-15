@@ -1,5 +1,4 @@
 import React from "react"
-import { IconType } from "react-icons/lib"
 
 export type UploaderProps = {
     setImage: React.Dispatch<React.SetStateAction<any>>,
@@ -17,6 +16,11 @@ export type UploaderProps = {
     uploadTextFontWeight?: string,
     uploadTextFontFamily?: string,
     uploadTextFontStyle?: string,
+    borderRadius?: string,
+    border?: string,
+    borderColor ?: string,
+    borderStyle ?: string,
+    boxShadow?: string,
 }
 
 export type ImageBoxProps = {
@@ -25,10 +29,31 @@ export type ImageBoxProps = {
     imageURL: string,
     imageBoxWidth?: string,
     imageBoxHeight?: string,
-    imageBoxBorderRadius?: string,
-    imageBoxBorder?: string,
-    imageBoxBorderColor?: string,
-    imageBoxBorderWidth?: string,
-    imageBoxBorderStyle?: string,
-    imageBoxBoxShadow?: string,
+    borderRadius?: string,
+    border?: string,
+    borderColor?: string,
+    borderWidth?: string,
+    borderStyle?: string,
+    boxShadow?: string,
+}
+
+export type PackageProps = {
+    uploadText?: string,
+    uploadIcon?: JSX.Element,
+    uploadIconSize?: string,
+    uploadIconColor?: string,
+    uploadTextColor?: string,
+    uploadTextSize?: string,
+    uploadTextFontWeight?: string,
+    imageBoxWidth?: string,
+    imageBoxHeight?: string,
+    borderRadius?: string,
+    border?: string,
+    borderColor?: string,
+    borderStyle?: string,
+    boxShadow?: string,
+    image: any,
+    setImage: React.Dispatch<React.SetStateAction<any>>,
+    imageURL: string,
+    setImageURL: React.Dispatch<React.SetStateAction<any>>,
 }
