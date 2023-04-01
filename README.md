@@ -71,10 +71,30 @@ Before starting :checkered_flag:, you need to have [React](https://reactjs.org/)
 These wonderful people have contributed to this project:
 
 <!-- readme: contributors -start -->
+<table>
+<tr>
+    <td align="center">
+        <a href="https://github.com/qbentil">
+            <img src="https://avatars.githubusercontent.com/u/55560024?v=4" width="100;" alt="qbentil"/>
+            <br />
+            <sub><b>Bentil Shadrack</b></sub>
+        </a>
+    </td></tr>
+</table>
 <!-- readme: contributors -end -->
 
 ## Project Maintainers
 <!-- readme: collaborators -start -->
+<table>
+<tr>
+    <td align="center">
+        <a href="https://github.com/qbentil">
+            <img src="https://avatars.githubusercontent.com/u/55560024?v=4" width="100;" alt="qbentil"/>
+            <br />
+            <sub><b>Bentil Shadrack</b></sub>
+        </a>
+    </td></tr>
+</table>
 <!-- readme: collaborators -end -->
 
 
