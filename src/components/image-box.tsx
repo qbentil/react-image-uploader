@@ -1,17 +1,11 @@
-import { MdDeleteForever } from "react-icons/md";
 import { ImageBoxProps } from "../Types";
+import { MdDeleteForever } from "react-icons/md";
 
 const ImageBox = ({
   setImage,
   imageURL,
   setImageURL,
-  imageBoxWidth,
-  imageBoxHeight,
-  borderRadius,
-  border,
-  borderColor,
-  borderStyle,
-  boxShadow,
+  extraClass
 }: ImageBoxProps) => {
   const Delete = () => {
     setImage(null);
@@ -20,13 +14,8 @@ const ImageBox = ({
   return (
     <div
       className={`flex flex-col justify-center items-center  cursor-pointer  p-2 relative
-      ${border}
-      ${borderColor || "border-gray-900"}
-      ${borderStyle || "border-dashed"}
-      ${boxShadow || "shadow-lg"}
-      ${imageBoxWidth || "w-full"}
-      ${imageBoxHeight || "h-full"}
-      ${borderRadius || "rounded-lg"}
+        border-gray-900 border-dashed shadow-lg w-full h-full rounded-lg
+      ${extraClass}
     `}
     >
       <img

@@ -1,5 +1,5 @@
-import { useState } from "react";
 import ReactImageUpload from "./components";
+import { useState } from "react";
 
 const ReactImageUploader = () => {
   const [image, setImage] = useState(null);
@@ -12,7 +12,6 @@ const ReactImageUploader = () => {
     imageURL,
     setImageURL,
     borderStyle: 'border-dashed border-2',
-
   }
   return (
     <main className="w-screen h-screen bg-orange-400 flex items-center justify-center">
