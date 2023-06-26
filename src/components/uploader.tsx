@@ -61,8 +61,12 @@ const Uploader = ({
           <p className="text-xs text-gray-900 dark:text-white">
             <span
               className={`"text-gray-900"} `}
-            >{`PNG, JPG, GIF up to 1MB with dimensions ${imageMaxWidth || null
-              }x${imageMaxHeight || null}`}</span>
+            >PNG, JPG, GIF up to 1MB with dimensions
+              {imageMaxWidth && imageMaxHeight && (
+                <span>              ${`${imageMaxWidth || null
+                  }x${imageMaxHeight || null}`}</span>
+              )}
+            </span>
           </p>
         </div>
         <input
