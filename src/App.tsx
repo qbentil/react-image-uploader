@@ -11,7 +11,6 @@ const ReactImageUploader = () => {
     setImage,
     imageURL,
     setImageURL,
-    borderStyle: 'border-dashed border-2',
   }
   return (
     <main className="w-screen h-screen bg-orange-400 flex items-center justify-center">
