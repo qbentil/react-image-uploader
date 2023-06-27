@@ -1,36 +1,44 @@
 # React-Image-Uploader
 
 ## :dart: About
+
 An open source React and Tailwind package for image preview before upload.
 
 ## Installation
 
-```npm install react-image-upload --save```
+`npm install react-image-upload --save`
 
 ## Usage
 
-```jsx 
-import React from 'react';
-import ReactImageUpload from 'react-image-upload';
+```jsx
+  import ImageUpload from 'react-image-upload';
+  import { useState } from "react";
 
-const App = () => {
-  return (
-    <div className="App">
-      <ReactImageUpload 
-        uploadText="Upload Image"
-        uploadIcon={<MdCloudUpload />}
-        imagePreviewHeight="200px"
-        imagePreviewWidth=  "200px"
-        imagePreviewBorderRadius="10px"
-      />
-    </div>
-  );
-};
+  const App = () => {
+    const [image, setImage] = useState(null);
+    const [imageURL, setImageURL] = useState("");
 
+    let uploaderOptions = {
+      uploadText: "Upload Photo",
+      image,
+      setImage,
+      imageURL,
+      setImageURL,
+    };
+    return (
+      <main className="w-screen h-screen bg-orange-400 flex items-center justify-center">
+        <div className="h-72">
+          <ImageUpload options={uploaderOptions} />
+        </div>
+      </main>
+    );
+  };
 
+  export default App;
 ```
 
 ## License
+
 MIT License
 
 Copyright (c) 2020-present, React-Image-Uploader
@@ -84,6 +92,7 @@ These wonderful people have contributed to this project:
 <!-- readme: contributors -end -->
 
 ## Project Maintainers
+
 <!-- readme: collaborators -start -->
 <table>
 <tr>
@@ -97,20 +106,12 @@ These wonderful people have contributed to this project:
 </table>
 <!-- readme: collaborators -end -->
 
-
 ## Changelog
 
 ## Contributing
 
-
 ## Tests
-
 
 ## Questions
 
-
 ## Issues
-
-
-
-
